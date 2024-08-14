@@ -1,0 +1,9 @@
+aiohttp==3.10.0
+asyncio==3.4.3
+git+https://github.com/PyrogramMod/PyrogramMod
+motor==3.5.1
+py-tgcalls==2.0.3b1
+python-dotenv==1.0.1
+TgCrypto==1.2.5
+youtube-search-python
+yt-dlp==2024.7.25
