@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-  worker: AdityaHalder start
+  worker: python3 -m AdityaHalder
