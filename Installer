@@ -1,5 +1,6 @@
 aiohttp==3.10.0
 aiofiles
+pillow==9.5.0
 asyncio==3.4.3
 git+https://github.com/PyrogramMod/PyrogramMod
 motor==3.5.1
