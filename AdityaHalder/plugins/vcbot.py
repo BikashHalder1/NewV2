@@ -213,9 +213,9 @@ def random_color_generator():
 async def gen_thumb(results, user_id):
     if not results:
         return f"https://graph.org/file/d4bc06ada79821eb01025.jpg"
-    title = results.get("title")
-    title = re.sub("\W+", " ", title)
-    title = title.title()
+    title_a = results.get("title")
+    title_b = re.sub("\W+", " ", title_a)
+    title = title_b.title()
     vidid = results.get("id")
     duration = results.get("duration")
     views = results.get("views")
@@ -615,7 +615,7 @@ async def stream_audio_or_video(client, message):
                         pass
                 else:
                     try:
-                        invitelink = await bot.create_chat_invite_link(chat_id)
+                        invitelink = await bot.export_chat_invite_link(chat_id)
                     except ChatAdminRequired:
                         return await aux.edit(
                             "**🤖 𝙃𝙚𝙮, 𝙄 𝙉𝙚𝙚𝙙 𝙄𝙣𝙫𝙞𝙩𝙚 𝙐𝙨𝙚𝙧 𝙋𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣 𝙏𝙤 𝘼𝙙𝙙 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙄𝘿❗**"
